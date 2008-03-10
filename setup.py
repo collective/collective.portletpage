@@ -1,6 +1,6 @@
 from setuptools import setup, find_packages
 
-version = '1.0b1'
+version = '1.0b2'
 
 setup(name='collective.portletpage',
       version=version,
@@ -27,7 +27,7 @@ view of the content object.
       packages=find_packages(exclude=['ez_setup']),
       namespace_packages=['collective'],
       include_package_data=True,
-      zip_safe=True,
+      zip_safe=False,
       install_requires=[
           'setuptools',
           # -*- Extra requirements: -*-
