@@ -7,7 +7,7 @@
       i18n:domain="collective.portletpage">
 <body>
 
-<metal:css fill-slot="css_slot">
+<metal:css fill-slot="style_slot">
     <style type="text/css" media="all"
             tal:content="string: @import url(${context/++resource++collective.portletpage.css});"></style>
 </metal:css>
@@ -25,35 +25,35 @@
 
         <p>
            Use the controls below to change the portlets assigned to the
-           page. 
+           page.
         </p>
-        
+
         <div id="portletPageColumns">
-            
+
             <div
-                id="portletPageTopRow" 
+                id="portletPageTopRow"
                 tal:content="structure provider:collective.portletpage.toprow"
                 />
-            
+
             <hr />
-            
+
             <div
-                id="portletPageSecondColumn" 
+                id="portletPageSecondColumn"
                 tal:content="structure provider:collective.portletpage.secondcolumn"
                 />
-            
+
             <div
                 id="portletPageFirstColumn"
                 tal:content="structure provider:collective.portletpage.firstcolumn"
                 />
-            
+
             <hr />
-            
+
             <div
                 id="portletPageBottomRow"
                 tal:content="structure provider:collective.portletpage.bottomrow"
                 />
-            
+
         </div>
 
 

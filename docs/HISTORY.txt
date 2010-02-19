@@ -1,9 +1,6 @@
 Changelog for collective.portletpage
 
-    (name of developer listed in brackets)
+after 1.0b2
+-----------
 
-collective.portletpage - 1.0b1 Unreleased
-
-    - Initial package structure.
-      [zopeskel]
-
+- using style_slot instead of css_slot (name changed in plonetheme.sunburst which is default for plone4)
