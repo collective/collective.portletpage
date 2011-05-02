@@ -1,6 +1,17 @@
 Changelog
 =========
 
+
+1.0 (unreleased)
+----------------
+
+- Add metadata.xml to the default-profile.
+  [WouterVH]
+
+- Add MANIFEST.in
+  [WouterVH]
+
+
 1.0b3 (2010-03-15)
 ------------------
 

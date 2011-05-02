@@ -16,6 +16,7 @@ PortletPageSchema['text'].storage = atapi.AnnotationStorage()
 
 finalizeATCTSchema(PortletPageSchema)
 
+
 class PortletPage(document.ATDocument):
     """A page with some body text and a list of portlets.
     """

@@ -6,6 +6,7 @@ from Testing import ZopeTestCase as ztc
 from Products.PloneTestCase import PloneTestCase as ptc
 from Products.PloneTestCase.layer import onsetup
 
+
 @onsetup
 def setup_package():
 
@@ -15,14 +16,16 @@ def setup_package():
     fiveconfigure.debug_mode = False
 
     ztc.installPackage('collective.portletpage')
-    
+
 setup_package()
 ptc.setupPloneSite(products=['collective.portletpage'])
+
 
 class TestCase(ptc.PloneTestCase):
     """We use this base class for all the tests in this package. If necessary,
     we can put common utility or setup code in here.
     """
+
 
 class FunctionalTestCase(ptc.FunctionalTestCase):
     """We use this base class for all the tests in this package. If necessary,
