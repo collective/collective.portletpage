@@ -1,6 +1,18 @@
 Changelog
 =========
 
+1.1 (unreleased)
+----------------
+
+- changed ``content_meta_type`` from ``Portlet Page`` to ``PortletPage``
+  that was breaking sorting (see `#8161`__).
+  [keul]
+
+- removed from ``IPortletPage`` interface the ``subtitle`` field, not
+  used anywhere.
+  [keul]
+
+__ http://dev.plone.org/plone/ticket/8161
 
 1.0 (unreleased)
 ----------------
@@ -10,7 +22,6 @@ Changelog
 
 - Add MANIFEST.in
   [WouterVH]
-
 
 1.0b3 (2010-03-15)
 ------------------

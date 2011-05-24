@@ -2,10 +2,14 @@
  */
  
 #portletPageFirstColumn {
-    width: 50%;
+    width: 48%;
 }
 
 #portletPageSecondColumn {
     float: right;
-    width: 50%;
+    width: 48%;
+}
+
+#portletPageColumns dl.portlet {
+	font-size: 100%;
 }
