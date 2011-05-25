@@ -13,3 +13,12 @@
 #portletPageColumns dl.portlet {
 	font-size: 100%;
 }
+
+#portletPageBottomRow {
+	clear: both;
+}
+
+#portletPageColumns dd.portletItem,
+#portletPageColumns dd.portletFooter {
+    margin: 0;
+}
