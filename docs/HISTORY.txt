@@ -45,6 +45,9 @@ Changelog
   again, is needed for really translate views name).
   [keul]   
 
+- expande left and right column if one of the two if missing
+  [keul] 
+
 __ http://dev.plone.org/plone/ticket/8161
 __ http://plone.org/products/redturtle.portletpage.views
 __ https://dev.plone.org/plone/ticket/11840

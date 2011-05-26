@@ -16,7 +16,7 @@ setup(name='collective.portletpage',
         "Programming Language :: Python",
         "Topic :: Software Development :: Libraries :: Python Modules",
         ],
-      keywords='',
+      keywords='plone portlet content',
       author='Martin Aspeli',
       author_email='optilude@gmail.com',
       url='http://plone.org',
@@ -27,6 +27,7 @@ setup(name='collective.portletpage',
       zip_safe=False,
       install_requires=[
           'setuptools',
+          'Plone',
           # -*- Extra requirements: -*-
       ],
       entry_points="""

@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-05-25 09:25+0000\n"
+"POT-Creation-Date: 2011-05-26 09:51+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: Luca Fabbri <keul@redturtle.it>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,15 +18,23 @@ msgstr ""
 msgid "A page with some body text and a list of portlets."
 msgstr "Una pagina con un testo e una lista di portlet."
 
-#: ./interfaces.py:14
+#: ./interfaces.py:16
 msgid "Body text"
 msgstr "Testo del documento"
 
-#: ./interfaces.py:12
+#: ./browser/manage-portletpage-portlets.pt:22
+msgid "Manage Portlet Page portlets"
+msgstr "Gestisci portlet del Portlet Page"
+
+#: ./interfaces.py:15
 msgid "Page title"
 msgstr "Titolo dela pagina"
 
 #: ./profiles/default/types/Portlet_Page.xml
 msgid "Portlet Page"
 msgstr "Pagina con portlet"
+
+#: ./browser/manage-portletpage-portlets.pt:26
+msgid "Use the controls below to change the portlets assigned to the page."
+msgstr "Usa i controllo sotto per cambiare le portlet assegnate a questa pagina."
 

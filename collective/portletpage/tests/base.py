@@ -4,6 +4,7 @@ from Products.Five import fiveconfigure
 from Testing import ZopeTestCase as ztc
 
 from Products.PloneTestCase import PloneTestCase as ptc
+from Products.PloneTestCase.setup import default_password
 from Products.PloneTestCase.layer import onsetup
 
 
@@ -31,3 +32,9 @@ class FunctionalTestCase(ptc.FunctionalTestCase):
     """We use this base class for all the tests in this package. If necessary,
     we can put common utility or setup code in here.
     """
+
+    def afterSetUp(self):
+        self.portal.portal_membership.addMember('uber',
+                                                default_password,
+                                                ('Member', 'Manager'), [])
+

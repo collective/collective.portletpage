@@ -38,5 +38,5 @@ Fill in the form and submit.
     >>> browser.getControl(name='title').value = "Welcome"
     >>> browser.getControl(name='description').value = "This is the front page"
     >>> browser.getControl(name='text').value = "<b>Hello</b>"
-    >>> browser.getControl(name='form_submit').click()
+    >>> browser.getControl('Save').click()
     
