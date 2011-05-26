@@ -9,6 +9,7 @@ from plone.portlets.constants import CONTEXT_ASSIGNMENT_KEY
 from plone.portlets.constants import CONTEXT_CATEGORY
 
 from plone.portlets.retriever import PortletRetriever
+from plone.portlets.interfaces import IPortletAssignmentSettings
 
 from collective.portletpage.interfaces import IPortletPageColumn
 
@@ -46,7 +47,14 @@ class PortletPageRetriever(PortletRetriever):
         if localManager is None:
             return []
 
+        assignments = []
+        for assignment in localManager.values():
+            settings = IPortletAssignmentSettings(assignment)
+            if not settings.get('visible', True):
+                continue
+            assignments.append(assignment)
+
         return [{'category': CONTEXT_CATEGORY,
                  'key': pcontext.uid,
                  'name': a.__name__,
-                 'assignment': a} for a in localManager.values()]
+                 'assignment': a} for a in assignments]

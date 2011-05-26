@@ -192,4 +192,23 @@ Same behavior if we delete the right column. The left one will fill all the spac
     >>> 'portletPageColumn portletPageLeftColumn' in browser.contents
     False
 
+Let now test if the "*Hide*" link feature works also with portlet inside portletpage.
+
+    >>> browser.open(url+'/@@portlets')
+    >>> browser.getLink('Hide').click()
+    >>> browser.open(url)
+    >>> browser.contents
+    '...<div id="portletPageColumns">...</div>...'
+
+This is like having no portlet, not show any portlet container.
+
+    >>> 'portletPageTopRow' in browser.contents
+    False
+    >>> 'portletPageFirstColumn' in browser.contents
+    False
+    >>> 'portletPageSecondColumn' in browser.contents
+    False
+    >>> 'portletPageBottomColumn' in browser.contents
+    False
+
 That's all!

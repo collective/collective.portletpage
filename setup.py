@@ -1,7 +1,7 @@
 import os
 from setuptools import setup, find_packages
 
-version = '1.1dev'
+version = '1.1b1'
 
 setup(name='collective.portletpage',
       version=version,
@@ -19,7 +19,7 @@ setup(name='collective.portletpage',
       keywords='plone portlet content',
       author='Martin Aspeli',
       author_email='optilude@gmail.com',
-      url='http://plone.org',
+      url='http://plone.org/collective.portletpage',
       license='GPL',
       packages=find_packages(exclude=['ez_setup']),
       namespace_packages=['collective'],
