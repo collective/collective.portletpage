@@ -1,6 +1,53 @@
 Changelog
 =========
 
+1.1 (unreleased)
+----------------
+
+- changed ``content_meta_type`` from ``Portlet Page`` to ``PortletPage``
+  that was breaking sorting (see `#8161`__).
+  [keul]
+
+- removed from ``IPortletPage`` interface the ``subtitle`` field, not
+  used anywhere.
+  [keul]
+
+- added ``portletPageColumn`` class to every portlet column.
+  [keul]
+
+- title field is not required anymore.
+  [keul]
+
+- when not provided, title and description are not shown in the
+  view (this partially deprecate the need of additional products
+  like `redturtle.portletpage.views`__).
+  [keul]
+
+- added a CSS ``clear`` rule at the last column.
+  [nekorin]
+
+- added a CSS rules for hack Sunburst behaviour with DD elements
+  (see `#11840`__)
+  [nekorin]
+
+- do not display portlets containers when empty.
+  [keul]
+
+- added translation support, both i18n and locales
+  (i18n is the only way right now to translate some stuff).
+  [keul]
+
+- changed the "*Portlets*" action tab to "*Manage portlet*".
+  [keul]
+
+- changes the ``i18n:domain`` of the configure.zcml of the
+  browser module to "plone" (this is not formally right but,
+  again, is needed for really translate views name).
+  [keul]   
+
+__ http://dev.plone.org/plone/ticket/8161
+__ http://plone.org/products/redturtle.portletpage.views
+__ https://dev.plone.org/plone/ticket/11840
 
 1.0 (unreleased)
 ----------------
@@ -10,7 +57,6 @@ Changelog
 
 - Add MANIFEST.in
   [WouterVH]
-
 
 1.0b3 (2010-03-15)
 ------------------

@@ -17,13 +17,13 @@
 
         <div tal:replace="structure provider:plone.abovecontenttitle" />
 
-        <h1 class="documentFirstHeading">
+        <h1 class="documentFirstHeading" tal:condition="context/Title">
             <span metal:use-macro="python:context.widget('title', mode='view')" />
         </h1>
 
         <div tal:replace="structure provider:plone.belowcontenttitle" />
 
-        <div class="documentDescription">
+        <div class="documentDescription" tal:condition="context/Description">
             <span metal:use-macro="python:context.widget('description', mode='view')" />
         </div>
 
@@ -35,21 +35,29 @@
 
             <div
                 id="portletPageTopRow"
+				class="portletPageColumn"
+                tal:condition="view/hasColumnTop"
                 tal:content="structure provider:collective.portletpage.toprow"
                 />
 
             <div
                 id="portletPageSecondColumn"
+				class="portletPageColumn"
+                tal:condition="view/hasColumnSecond"
                 tal:content="structure provider:collective.portletpage.secondcolumn"
                 />
 
             <div
                 id="portletPageFirstColumn"
+				class="portletPageColumn"
+				tal:condition="view/hasColumnFirst"
                 tal:content="structure provider:collective.portletpage.firstcolumn"
                 />
 
             <div
                 id="portletPageBottomRow"
+				class="portletPageColumn"
+				tal:condition="view/hasColumnBottom"
                 tal:content="structure provider:collective.portletpage.bottomrow"
                 />
 

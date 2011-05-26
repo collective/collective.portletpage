@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 from zope.interface import implements
 
 from Products.Archetypes import atapi
@@ -11,11 +13,11 @@ from collective.portletpage.config import PROJECTNAME
 PortletPageSchema = document.ATDocumentSchema.copy()
 
 PortletPageSchema['title'].storage = atapi.AnnotationStorage()
+PortletPageSchema['title'].required = False
 PortletPageSchema['description'].storage = atapi.AnnotationStorage()
 PortletPageSchema['text'].storage = atapi.AnnotationStorage()
 
 finalizeATCTSchema(PortletPageSchema)
-
 
 class PortletPage(document.ATDocument):
     """A page with some body text and a list of portlets.

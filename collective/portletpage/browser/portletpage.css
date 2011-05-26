@@ -2,10 +2,23 @@
  */
  
 #portletPageFirstColumn {
-    width: 50%;
+    width: 48%;
 }
 
 #portletPageSecondColumn {
     float: right;
-    width: 50%;
+    width: 48%;
+}
+
+#portletPageColumns dl.portlet {
+	font-size: 100%;
+}
+
+#portletPageBottomRow {
+	clear: both;
+}
+
+#portletPageColumns dd.portletItem,
+#portletPageColumns dd.portletFooter {
+    margin: 0;
 }
