@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.1b1 (unreleased)
+1.1b1 (2011-05-27)
 ------------------
 
 - changed ``content_meta_type`` from ``Portlet Page`` to ``PortletPage``

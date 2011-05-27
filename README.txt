@@ -57,4 +57,12 @@ This product was mainly developed by *Martin Aspeli*, and other from the Plone c
 Credits
 =======
 
-This work was generously sponsored by Centrepoint (http://centrepoint.org.uk)
+This work was sponsored by:
+
+* `Centrepoint`__ 
+* `Guardia di Finanza`__; Guardia di Finanza support the `PloneGov initiative`__
+
+__ http://centrepoint.org.uk
+__ http://www.gdf.gov.it/
+__ http://www.plonegov.it/
+
