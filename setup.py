@@ -1,7 +1,7 @@
 import os
 from setuptools import setup, find_packages
 
-version = '1.1b1'
+version = '1.1b2'
 
 setup(name='collective.portletpage',
       version=version,

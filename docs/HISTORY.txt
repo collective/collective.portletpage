@@ -1,6 +1,12 @@
 Changelog
 =========
 
+1.1b2 (Unreleased)
+------------------
+
+- restored Plone 3 compatibility
+  [keul]
+
 1.1b1 (2011-05-27)
 ------------------
 
