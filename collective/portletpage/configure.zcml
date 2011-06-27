@@ -19,7 +19,7 @@
         name="default"
         title="Portlet pages"
         directory="profiles/default"
-        description="Install the Portlet Page content type"
+        description="A Page like content with an additional section for showing portlets"
         provides="Products.GenericSetup.interfaces.EXTENSION"
         />
         

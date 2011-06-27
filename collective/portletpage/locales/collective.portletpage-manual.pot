@@ -22,3 +22,9 @@ msgstr ""
 
 msgid "A two-column view"
 msgstr ""
+
+msgid "Portlet pages"
+msgstr ""
+
+msgid "A Page like content with an additional section for showing portlets"
+msgstr ""
