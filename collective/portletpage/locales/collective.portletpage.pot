@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-05-26 09:51+0000\n"
+"POT-Creation-Date: 2011-06-27 09:53+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,6 +21,9 @@ msgstr ""
 msgid "A page with some body text and a list of portlets."
 msgstr ""
 
+msgid "A two-column view"
+msgstr ""
+
 #: ./interfaces.py:16
 msgid "Body text"
 msgstr ""
@@ -29,12 +32,19 @@ msgstr ""
 msgid "Manage Portlet Page portlets"
 msgstr ""
 
+#: ./profiles/default/types/Portlet_Page.xml
+msgid "Manage portlets"
+msgstr ""
+
 #: ./interfaces.py:15
 msgid "Page title"
 msgstr ""
 
 #: ./profiles/default/types/Portlet_Page.xml
 msgid "Portlet Page"
+msgstr ""
+
+msgid "Two columns"
 msgstr ""
 
 #: ./browser/manage-portletpage-portlets.pt:26

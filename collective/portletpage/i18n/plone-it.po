@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-05-26 09:51+0000\n"
+"POT-Creation-Date: 2011-06-27 09:53+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,13 +17,7 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: plone\n"
 
-msgid "A two-column view"
-msgstr "Una vista a due colonne"
-
 #. Default: "Manage portlets"
 msgid "Manage portlets"
 msgstr "Gestisci portlet"
-
-msgid "Two columns"
-msgstr "Due colonne"
 

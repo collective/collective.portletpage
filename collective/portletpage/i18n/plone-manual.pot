@@ -19,9 +19,3 @@ msgstr ""
 
 msgid "Manage portlets"
 msgstr ""
-
-msgid "Two columns"
-msgstr ""
-
-msgid "A two-column view"
-msgstr ""

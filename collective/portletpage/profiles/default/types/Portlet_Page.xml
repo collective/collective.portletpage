@@ -30,7 +30,8 @@
   <permission value="Modify portal content"/>
  </action>
  <action title="Manage portlets" action_id="portlets" category="object" condition_expr=""
-    url_expr="string:${object_url}/@@portlets" visible="True">
+    url_expr="string:${object_url}/@@portlets" visible="True"
+	i18n:attributes="title">
   <permission value="Modify portal content"/>
  </action>
 </object>

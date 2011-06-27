@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 from Products.Five import zcml
 from Products.Five import fiveconfigure
 

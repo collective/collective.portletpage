@@ -6,6 +6,8 @@ Changelog
 
 - restored Plone 3 compatibility
   [keul]
+- plone 4.1 compatibility
+  [keul]
 
 1.1b1 (2011-05-27)
 ------------------
