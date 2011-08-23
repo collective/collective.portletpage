@@ -45,7 +45,7 @@ __ http://plone.org/documentation/manual/developer-manual/managing-projects-with
 Support
 =======
 
-For reporting issues of missing features, please refer to the `product issue tracker`__
+For reporting issues or ask for new features, please refer to the `product issue tracker`__
 
 __ http://plone.org/products/collective.portletpage/issues/
 

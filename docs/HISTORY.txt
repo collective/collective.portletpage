@@ -6,8 +6,10 @@ Changelog
 
 - restored Plone 3 compatibility
   [keul]
+
 - Plone 4.1 compatibility
   [keul]
+
 - updated translation to be Plone 4.1 compatible; this will probably
   make some label untranslable on Plone 3
   [keul]
