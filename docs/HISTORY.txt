@@ -11,8 +11,8 @@ Changelog
   (close `#1`__) [nekorin]
 - included "Site Administrator" in the rolemap.xml [keul]
 
-_ http://plone.org/products/collective.portletpage/issues/2
-_ http://plone.org/products/collective.portletpage/issues/1
+__ http://plone.org/products/collective.portletpage/issues/2
+__ http://plone.org/products/collective.portletpage/issues/1
 
 1.1b2 (2011-08-23)
 ------------------
