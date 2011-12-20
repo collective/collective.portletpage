@@ -1,9 +1,18 @@
 Changelog
 =========
 
-x.x (2011-xx-xx)
-------------------
+1.1 (Unreleased)
+----------------
+
 - fixed related items in view for Plone 4.1 compatibility [fdelia]
+- register as linkable object for TinyMCE
+  (close `#2`__) [keul]
+- restored logical order of first and secondo column in XHTML
+  (close `#1`__) [nekorin]
+- included "Site Administrator" in the rolemap.xml [keul]
+
+_ http://plone.org/products/collective.portletpage/issues/2
+_ http://plone.org/products/collective.portletpage/issues/1
 
 1.1b2 (2011-08-23)
 ------------------

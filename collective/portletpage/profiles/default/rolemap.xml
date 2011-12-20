@@ -5,6 +5,7 @@
 
     <permission name="Portlet Page: Add Portlet Page" acquire="False">
         <role name="Manager" />
+        <role name="Site Administrator" />
         <role name="Contributor" />
     </permission>
 

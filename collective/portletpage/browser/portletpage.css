@@ -2,6 +2,7 @@
  */
  
 .portletPageLeftColumn {
+    float: left;
     width: 48%;
 }
 
