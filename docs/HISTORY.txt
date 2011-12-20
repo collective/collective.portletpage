@@ -1,6 +1,10 @@
 Changelog
 =========
 
+x.x (2011-xx-xx)
+------------------
+- fixed related items in view for Plone 4.1 compatibility [fdelia]
+
 1.1b2 (2011-08-23)
 ------------------
 
