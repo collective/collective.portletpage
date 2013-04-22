@@ -1,6 +1,11 @@
 Changelog
 =========
 
+1.11 (unreleased)
+----------------
+
+- Added French translation [bouchardsyl]
+
 1.1 (2011-12-20)
 ----------------
 
