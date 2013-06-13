@@ -1,24 +1,18 @@
-from zope.interface import implementsOnly, Interface
+from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
+from collective.portletpage.browser.interfaces import IManagePortletPagePortletsView
+from collective.portletpage.interfaces import IPortletPageColumn
+from plone.app.portlets.browser.manage import ManageContextualPortlets
+from plone.app.portlets.manager import ColumnPortletManagerRenderer
+from plone.memoize.instance import memoize
 from zope.component import adapts, getMultiAdapter
-
+from zope.interface import implementsOnly, Interface
 from zope.publisher.interfaces.browser import IBrowserView
 from zope.publisher.interfaces.browser import IDefaultBrowserLayer
-
-from plone.app.portlets.manager import ColumnPortletManagerRenderer
-from plone.app.portlets.browser.manage import ManageContextualPortlets
-
-from collective.portletpage.interfaces import IPortletPageColumn
-from collective.portletpage.browser.interfaces import IManagePortletPagePortletsView
-
-from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
-
-from plone.memoize.instance import memoize
 
 
 class PortletPageColumn(ColumnPortletManagerRenderer):
     """Render a column
     """
-
     adapts(Interface, IDefaultBrowserLayer, IBrowserView, IPortletPageColumn)
     template = ViewPageTemplateFile('portletpage-column.pt')
 
@@ -46,7 +40,6 @@ class PortletPageColumn(ColumnPortletManagerRenderer):
 class ManagePortlets(ManageContextualPortlets):
     """View used for the edit screen
     """
-
     implementsOnly(IManagePortletPagePortletsView)
 
     __call__ = ViewPageTemplateFile('manage-portletpage-portlets.pt')
@@ -54,4 +47,3 @@ class ManagePortlets(ManageContextualPortlets):
     def __init__(self, context, request):
         # Skip past the main parent constructor, since it sets disable_border
         super(ManageContextualPortlets, self).__init__(context, request)
-

@@ -4,17 +4,33 @@ Changelog
 1.11 (unreleased)
 ----------------
 
-- Added French translation [bouchardsyl]
+- Change "Portlet Page" type registration, use actions.xml for
+  "Manage Portlets" object tab and fix multiple buttons in edit-bar issue.
+  [thet]
+
+- Update templates to Plone 4 style and render it in content-core macro.
+  [thet]
+
+- PEP 8 Cleanups.
+  [thet]
+
+- Added French translation.
+  [bouchardsyl]
 
 1.1 (2011-12-20)
 ----------------
 
-- fixed related items in view for Plone 4.1 compatibility [fdelia]
-- register as linkable object for TinyMCE
-  (close `#2`__) [keul]
-- restored logical order of first and secondo column in XHTML
-  (close `#1`__) [nekorin]
-- included "Site Administrator" in the rolemap.xml [keul]
+- fixed related items in view for Plone 4.1 compatibility.
+  [fdelia]
+
+- register as linkable object for TinyMCE (close `#2`__).
+  [keul]
+
+- restored logical order of first and secondo column in XHTML (close `#1`__).
+  [nekorin]
+
+- included "Site Administrator" in the rolemap.xml.
+  [keul]
 
 __ http://plone.org/products/collective.portletpage/issues/2
 __ http://plone.org/products/collective.portletpage/issues/1

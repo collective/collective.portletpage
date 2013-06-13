@@ -8,69 +8,41 @@
 <body>
 
 <metal:css fill-slot="style_slot">
-    <style type="text/css" media="all"
-            tal:content="string: @import url(${context/++resource++collective.portletpage.css});"></style>
+  <style type="text/css" media="all"
+      tal:content="string: @import url(${context/++resource++collective.portletpage.css});"></style>
 </metal:css>
 
-<metal:main fill-slot="main">
-    <tal:main-macro metal:define-macro="main">
+<metal:content-core fill-slot="content-core">
+<metal:block define-macro="content-core">
 
-        <div tal:replace="structure provider:plone.abovecontenttitle" />
+  <div id="portletPageColumns"
+      tal:define="bothColumns python:view.hasColumnFirst() and view.hasColumnSecond()">
 
-        <h1 class="documentFirstHeading" tal:condition="context/Title">
-            <span metal:use-macro="python:context.widget('title', mode='view')" />
-        </h1>
+    <div id="portletPageTopRow" class="portletPageColumn"
+        tal:condition="view/hasColumnTop"
+        tal:content="structure provider:collective.portletpage.toprow"
+        />
 
-        <div tal:replace="structure provider:plone.belowcontenttitle" />
+    <div id="portletPageFirstColumn" class="portletPageColumn portletPageLeftColumn"
+        tal:condition="view/hasColumnFirst"
+        tal:content="structure provider:collective.portletpage.firstcolumn"
+        tal:attributes="class python:bothColumns and 'portletPageColumn portletPageLeftColumn' or 'portletPageColumn'"
+        />
 
-        <div class="documentDescription" tal:condition="context/Description">
-            <span metal:use-macro="python:context.widget('description', mode='view')" />
-        </div>
+    <div id="portletPageSecondColumn" class="portletPageColumn portletPageRightColumn"
+        tal:condition="view/hasColumnSecond"
+        tal:content="structure provider:collective.portletpage.secondcolumn"
+        tal:attributes="class python:bothColumns and 'portletPageColumn portletPageRightColumn' or 'portletPageColumn'"
+        />
 
-        <div tal:replace="structure provider:plone.abovecontentbody" />
+    <div id="portletPageBottomRow" class="portletPageColumn"
+        tal:condition="view/hasColumnBottom"
+        tal:content="structure provider:collective.portletpage.bottomrow"
+        />
 
-        <div tal:condition="text" metal:use-macro="python:context.widget('text', mode='view')" />
+  </div>
 
-        <div id="portletPageColumns"
-		     tal:define="bothColumns python:view.hasColumnFirst() and view.hasColumnSecond()">
-
-            <div
-                id="portletPageTopRow"
-				class="portletPageColumn"
-                tal:condition="view/hasColumnTop"
-                tal:content="structure provider:collective.portletpage.toprow"
-                />
-
-            <div
-                id="portletPageFirstColumn"
-				class="portletPageColumn portletPageLeftColumn"
-				tal:condition="view/hasColumnFirst"
-                tal:content="structure provider:collective.portletpage.firstcolumn"
-				tal:attributes="class python:bothColumns and 'portletPageColumn portletPageLeftColumn' or 'portletPageColumn'"
-                />
-
-            <div
-                id="portletPageSecondColumn"
-				class="portletPageColumn portletPageRightColumn"
-                tal:condition="view/hasColumnSecond"
-                tal:content="structure provider:collective.portletpage.secondcolumn"
-				tal:attributes="class python:bothColumns and 'portletPageColumn portletPageRightColumn' or 'portletPageColumn'"
-                />
-
-            <div
-                id="portletPageBottomRow"
-				class="portletPageColumn"
-				tal:condition="view/hasColumnBottom"
-                tal:content="structure provider:collective.portletpage.bottomrow"
-                />
-
-        </div>
-
-        <div tal:replace="structure provider:plone.belowcontentbody" />
-
-    </tal:main-macro>
-</metal:main>
-
+</metal:block>
+</metal:content-core>
 </body>
 </html>
-

@@ -22,6 +22,4 @@
     <!-- Register a particular retriever for the portlets on the portlet page -->
     <adapter factory=".portlets.PortletPageRetriever" />
 
-
-
 </configure>

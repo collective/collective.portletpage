@@ -1,14 +1,12 @@
-from zope.interface import Interface
-from zope.component import adapts
-from zope.annotation.interfaces import IAnnotations
-
-from plone.portlets.interfaces import IPortletContext
-from plone.portlets.interfaces import ILocalPortletAssignable
-
+from collective.portletpage.interfaces import IPortletPageColumn
 from plone.portlets.constants import CONTEXT_ASSIGNMENT_KEY
 from plone.portlets.constants import CONTEXT_CATEGORY
-
+from plone.portlets.interfaces import ILocalPortletAssignable
+from plone.portlets.interfaces import IPortletContext
 from plone.portlets.retriever import PortletRetriever
+from zope.annotation.interfaces import IAnnotations
+from zope.component import adapts
+from zope.interface import Interface
 
 try:
     from plone.portlets.interfaces import IPortletAssignmentSettings
@@ -16,20 +14,16 @@ try:
 except ImportError:
     PLONE4 = False
 
-from collective.portletpage.interfaces import IPortletPageColumn
-
 
 class PortletPageRetriever(PortletRetriever):
     """Fetch portlets to display in a portlet page column.
     """
-
     adapts(Interface, IPortletPageColumn)
 
     def getPortlets(self):
         """Work out which portlets to display, returning a list of dicts
         describing assignments to render.
         """
-
         manager = self.storage.__name__
 
         pcontext = IPortletContext(self.context, None)

@@ -1,17 +1,14 @@
 # -*- coding: utf-8 -*-
-
-from zope.interface import Interface
-from zope import schema
-
+from collective.portletpage import MessageFactory as _
 from plone.app.portlets.interfaces import IColumn
 from plone.portlets.interfaces import IPortletManager
+from zope import schema
+from zope.interface import Interface
 
-from collective.portletpage import MessageFactory as _
 
 class IPortletPage(Interface):
     """Content type interface for portlet pages
     """
-
     title = schema.TextLine(title=_(u"Page title"))
     text = schema.Text(title=_(u"Body text"))
 
