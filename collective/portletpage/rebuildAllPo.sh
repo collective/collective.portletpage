@@ -1,12 +1,13 @@
 #!/bin/sh
 
 DOMAIN='collective.portletpage'
+I18NDUDE=i18ndude
 
-i18ndude rebuild-pot --pot locales/${DOMAIN}.pot --create ${DOMAIN} .
-i18ndude merge --pot locales/${DOMAIN}.pot --merge locales/${DOMAIN}-manual.pot
-i18ndude sync --pot locales/${DOMAIN}.pot locales/*/LC_MESSAGES/${DOMAIN}.po
+$I18NDUDE rebuild-pot --pot locales/${DOMAIN}.pot --create ${DOMAIN} .
+$I18NDUDE merge --pot locales/${DOMAIN}.pot --merge locales/${DOMAIN}-manual.pot
+$I18NDUDE sync --pot locales/${DOMAIN}.pot locales/*/LC_MESSAGES/${DOMAIN}.po
 
 DOMAIN=plone
 
-i18ndude merge --pot i18n/${DOMAIN}.pot --merge i18n/${DOMAIN}-manual.pot
-i18ndude sync --pot i18n/${DOMAIN}.pot i18n/${DOMAIN}-??.po
+$I18NDUDE merge --pot i18n/${DOMAIN}.pot --merge i18n/${DOMAIN}-manual.pot
+$I18NDUDE sync --pot i18n/${DOMAIN}.pot i18n/${DOMAIN}-??.po
