@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-06-27 12:29+0000\n"
+"POT-Creation-Date: 2013-06-27 15:14+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,31 +20,23 @@ msgstr ""
 msgid "A Page like content with an additional section for showing portlets"
 msgstr ""
 
-#: ./profiles/default/types/Portlet_Page.xml
-msgid "A page with some body text and a list of portlets."
-msgstr ""
-
 msgid "A two-column view"
 msgstr ""
 
-#: ./interfaces.py:16
+#: ./interfaces.py:13
 msgid "Body text"
 msgstr ""
 
-#: ./browser/manage-portletpage-portlets.pt:22
+#: ./browser/manage-portletpage-portlets.pt:16
 msgid "Manage Portlet Page portlets"
 msgstr ""
 
-#: ./profiles/default/types/Portlet_Page.xml
+#: ./profiles/default/actions.xml
 msgid "Manage portlets"
 msgstr ""
 
-#: ./interfaces.py:15
+#: ./interfaces.py:12
 msgid "Page title"
-msgstr ""
-
-#: ./profiles/default/types/Portlet_Page.xml
-msgid "Portlet Page"
 msgstr ""
 
 msgid "Portlet pages"
@@ -53,7 +45,7 @@ msgstr ""
 msgid "Two columns"
 msgstr ""
 
-#: ./browser/manage-portletpage-portlets.pt:26
+#: ./browser/manage-portletpage-portlets.pt:21
 msgid "Use the controls below to change the portlets assigned to the page."
 msgstr ""
 

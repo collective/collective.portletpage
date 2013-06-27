@@ -4,6 +4,9 @@ Changelog
 1.11 (unreleased)
 ----------------
 
+- German translations.
+  [thet]
+
 - Change "Portlet Page" type registration, use actions.xml for
   "Manage Portlets" object tab and fix multiple buttons in edit-bar issue.
   [thet]
