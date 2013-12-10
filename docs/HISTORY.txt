@@ -4,6 +4,9 @@ Changelog
 1.11 (unreleased)
 ----------------
 
+- Added Spanish translation.
+  [macagua]
+
 - German translations.
   [thet]
 
