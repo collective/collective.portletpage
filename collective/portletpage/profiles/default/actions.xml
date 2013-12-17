@@ -10,7 +10,7 @@
    <property name="icon_expr"></property>
    <property name="available_expr">python:object.portal_type=='Portlet Page'</property>
    <property name="permissions">
-      <permission value="Modify portal content"/>
+     <element value="Modify portal content"/>
    </property>
    <property name="visible">True</property>
   </object>

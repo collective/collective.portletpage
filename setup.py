@@ -3,7 +3,7 @@
 import os, sys
 from setuptools import setup, find_packages
 
-version = '1.1'
+version = '1.2.dev'
 
 install_requires = [
     'setuptools',
@@ -29,6 +29,7 @@ setup(name='collective.portletpage',
         "Framework :: Plone :: 4.0",
         "Framework :: Plone :: 4.1",
         "Framework :: Plone :: 4.2",
+        "Framework :: Plone :: 4.3",
         "Framework :: Zope2",
         "Framework :: Zope3",
         "Programming Language :: Python",

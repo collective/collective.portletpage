@@ -1,8 +1,12 @@
 Changelog
 =========
 
-1.11 (unreleased)
-----------------
+1.2.dev (unreleased)
+--------------------
+
+- Fix registration of "Manage Portlets" permission. The green edit-bar isn't
+  shown anymore to users with the right to edit these portlets.
+  [thet]
 
 - Added Spanish translation.
   [macagua]
