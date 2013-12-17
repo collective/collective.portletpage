@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: collective.portletpage\n"
-"POT-Creation-Date: 2013-06-27 15:14+0000\n"
+"POT-Creation-Date: 2013-12-17 13:43+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: Sylvain Bouchard <sylvain.bouchard@savoirfairelinux.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,6 +16,10 @@ msgstr ""
 
 msgid "A Page like content with an additional section for showing portlets"
 msgstr "Une page de contenu qui peut contenir des portlets"
+
+#: ./profiles/default/types/Portlet_Page.xml
+msgid "A page with the common text body and a set of portlets"
+msgstr ""
 
 msgid "A two-column view"
 msgstr "Une vue en deux colonnes"
@@ -36,7 +40,8 @@ msgstr "Gestion des portlets"
 msgid "Page title"
 msgstr "Titre de la page"
 
-msgid "Portlet pages"
+#: ./profiles/default/types/Portlet_Page.xml
+msgid "Portlet Page"
 msgstr "Pages avec portlets"
 
 msgid "Two columns"

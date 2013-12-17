@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2013-06-27 15:14+0000\n"
+"POT-Creation-Date: 2013-12-17 13:43+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,6 +18,10 @@ msgstr ""
 "Domain: collective.portletpage\n"
 
 msgid "A Page like content with an additional section for showing portlets"
+msgstr ""
+
+#: ./profiles/default/types/Portlet_Page.xml
+msgid "A page with the common text body and a set of portlets"
 msgstr ""
 
 msgid "A two-column view"
@@ -39,7 +43,8 @@ msgstr ""
 msgid "Page title"
 msgstr ""
 
-msgid "Portlet pages"
+#: ./profiles/default/types/Portlet_Page.xml
+msgid "Portlet Page"
 msgstr ""
 
 msgid "Two columns"

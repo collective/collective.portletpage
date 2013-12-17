@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: collective.portletpage\n"
-"POT-Creation-Date: 2013-06-27 15:14+0000\n"
+"POT-Creation-Date: 2013-12-17 13:43+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: Luca Fabbri <keul@redturtle.it>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,6 +16,10 @@ msgstr ""
 
 msgid "A Page like content with an additional section for showing portlets"
 msgstr "Contenuto simile alla Pagina ma con una sezione per mostrare portlet"
+
+#: ./profiles/default/types/Portlet_Page.xml
+msgid "A page with the common text body and a set of portlets"
+msgstr "Una pagina con il solito corpo del testo e una serie di riquadri"
 
 msgid "A two-column view"
 msgstr "Una vista a due colonne"
@@ -36,8 +40,9 @@ msgstr "Gestisci portlet"
 msgid "Page title"
 msgstr "Titolo della pagina"
 
-msgid "Portlet pages"
-msgstr "Pagine con portlet"
+#: ./profiles/default/types/Portlet_Page.xml
+msgid "Portlet Page"
+msgstr "Pagina con portlet"
 
 msgid "Two columns"
 msgstr "Due colonne"
