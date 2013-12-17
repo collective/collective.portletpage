@@ -47,7 +47,7 @@ Support
 
 For reporting issues or ask for new features, please refer to the `product issue tracker`__
 
-__ http://plone.org/products/collective.portletpage/issues/
+__ https://github.com/collective/collective.portletpage/issues
 
 Authors
 =======
