@@ -8,8 +8,8 @@ Changelog
   (as Plone columns do)
   [keul]
 
-- Fix registration of "Manage Portlets" permission. The green edit-bar isn't
-  shown anymore to users with the right to edit these portlets.
+- Fix permission for "Manage Portlets" action. Now, the green edit-bar is
+  only shown to users with appropriate permissions.
   [thet]
 
 - Added Spanish translation.
@@ -104,14 +104,14 @@ __ http://plone.org/products/collective.portletpage/issues/1
 - changes the ``i18n:domain`` of the configure.zcml of the
   browser module to "plone" (this is not formally right but,
   again, is needed for really translate views name).
-  [keul]   
+  [keul]
 
 - expanded left or right column if one of the two is missing,
-  filling all space available. 
+  filling all space available.
   [keul]
 
 - the Plone 4 "Hide" portlet now works also there.
-  [keul] 
+  [keul]
 
 - updated tests to reflect changes
 
