@@ -1,9 +1,10 @@
 # -*- coding: utf-8 -*-
+from setuptools import find_packages
+from setuptools import setup
+import os
+import sys
 
-import os, sys
-from setuptools import setup, find_packages
-
-version = '1.2.dev'
+version = '1.2'
 
 install_requires = [
     'setuptools',
@@ -46,7 +47,7 @@ setup(name='collective.portletpage',
       namespace_packages=['collective'],
       include_package_data=True,
       zip_safe=False,
-      install_requires = install_requires,
+      install_requires=install_requires,
       entry_points="""
       [z3c.autoinclude.plugin]
       target = plone
