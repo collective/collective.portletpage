@@ -6,6 +6,8 @@ Changelog
 
 - Restored text field in the content view
   [keul]
+- Fixed MANIFEST file
+  [keul]
 
 1.2 (2014-06-03)
 ----------------
