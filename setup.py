@@ -1,22 +1,10 @@
 # -*- coding: utf-8 -*-
+
 from setuptools import find_packages
 from setuptools import setup
 import os
-import sys
 
-version = '1.3.dev0'
-
-install_requires = [
-    'setuptools',
-]
-
-# what I read there seems not working properly for Plone 3.3
-# http://plone.org/documentation/manual/upgrade-guide/version/upgrading-plone-4.0-to-4.1/referencemanual-all-pages
-if sys.version_info < (2, 6):
-    install_requires.append('Plone')
-else:
-    install_requires.append('Products.CMFPlone')
-
+version = '1.2.1.dev0'
 
 setup(name='collective.portletpage',
       version=version,
@@ -26,7 +14,6 @@ setup(name='collective.portletpage',
       # Get more strings from http://www.python.org/pypi?%3Aaction=list_classifiers
       classifiers=[
         "Framework :: Plone",
-        "Framework :: Plone :: 3.3",
         "Framework :: Plone :: 4.0",
         "Framework :: Plone :: 4.1",
         "Framework :: Plone :: 4.2",
@@ -47,7 +34,10 @@ setup(name='collective.portletpage',
       namespace_packages=['collective'],
       include_package_data=True,
       zip_safe=False,
-      install_requires=install_requires,
+      install_requires=[
+        'setuptools',
+        'Products.CMFPlone',
+      ],
       entry_points="""
       [z3c.autoinclude.plugin]
       target = plone

@@ -15,6 +15,8 @@
 <metal:content-core fill-slot="content-core">
 <metal:block define-macro="content-core">
 
+  <div tal:condition="text" metal:use-macro="python:context.widget('text', mode='view')" />
+
   <div id="portletPageColumns"
       tal:define="bothColumns python:view.hasColumnFirst() and view.hasColumnSecond()">
 
