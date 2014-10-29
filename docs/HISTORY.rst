@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.2.1 (unreleased)
+1.2.1 (2014-10-29)
 ------------------
 
 - Restored text field in the content view
