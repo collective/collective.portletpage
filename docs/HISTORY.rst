@@ -4,8 +4,9 @@ Changelog
 1.2.2 (unreleased)
 ------------------
 
-- Nothing changed yet.
-
+- Add a data-portlethash attribute to be compliant wit
+  Plone 4.3 behavior
+  [ale-rt]
 
 1.2.1 (2014-10-29)
 ------------------
