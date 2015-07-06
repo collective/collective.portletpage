@@ -4,7 +4,8 @@ Changelog
 1.2.2 (unreleased)
 ------------------
 
-- Add a data-portlethash attribute to be compliant wit
+- Include manage-portlet.js to handle portlets management in Plone 4.3
+- Add a data-portlethash attribute to be compliant with
   Plone 4.3 behavior
   [ale-rt]
 
