@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.2.2 (unreleased)
+1.2.2 (2015-07-08)
 ------------------
 
 - Include manage-portlet.js to handle portlets management in Plone 4.3
