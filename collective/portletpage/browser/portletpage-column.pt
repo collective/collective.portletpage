@@ -2,7 +2,7 @@
 <div tal:attributes="id python:view.portlet_id(portlet)">
     <div tal:attributes="id string:portletwrapper-${portlet/hash};
                          class string:portletWrapper kssattr-portlethash-${portlet/hash};
-                         data-portlethash ${portlet/hash};"
+                         data-portlethash portlet/hash;"
          tal:content="structure python:view.safe_render(portlet['renderer'])" />
 </div>
 </tal:block>
