@@ -10,24 +10,30 @@ be created, using a test-browser test.
 
 First, some set-up.
 
-    >>> from Products.Five.testbrowser import Browser
-    >>> browser = Browser()
-    >>> portal_url = self.portal.absolute_url()
+    >>> from plone.testing import z2
+    >>> browser = z2.Browser(layer['app'])
+    >>> portal = layer['portal']
+    >>> portal_url = portal.absolute_url()
     
     >>> browser.handleErrors = False
-    >>> self.portal.error_log._ignored_exceptions = ()
+    >>> portal.error_log._ignored_exceptions = ()
     
+    >>> from plone.app.testing import TEST_USER_PASSWORD
+    >>> portal.portal_membership.addMember('uber',
+    ...                                    TEST_USER_PASSWORD,
+    ...                                    ('Member', 'Manager'), [])
+    >>> import transaction
+    >>>	transaction.commit()
+
 We will log authorise as Manager user.
     
-    >>> from Products.PloneTestCase.setup import default_password
     >>> browser.open(portal_url+'/logout')
     >>> browser.open(portal_url+'/login_form')
     >>> browser.getControl(name='__ac_name').value = 'uber'
-    >>> browser.getControl(name='__ac_password').value = default_password
+    >>> browser.getControl(name='__ac_password').value = TEST_USER_PASSWORD
     >>> browser.getControl('Log in').click()
     >>> 'You are now logged in' in browser.contents
     True
-
     
 Start on the portal root.
     
@@ -60,12 +66,12 @@ We focus on the content column. So lets disable the left and right column
     >>> from plone.portlets.interfaces import IPortletAssignmentMapping
 
     >>> left_column = getUtility(IPortletManager, name=u"plone.leftcolumn")
-    >>> left_assignable = getMultiAdapter((self.portal, left_column), IPortletAssignmentMapping)
+    >>> left_assignable = getMultiAdapter((portal, left_column), IPortletAssignmentMapping)
     >>> for name in left_assignable.keys():
     ...     del left_assignable[name]
 
     >>> right_column = getUtility(IPortletManager, name=u"plone.rightcolumn")
-    >>> right_assignable = getMultiAdapter((self.portal, right_column), IPortletAssignmentMapping)
+    >>> right_assignable = getMultiAdapter((portal, right_column), IPortletAssignmentMapping)
     >>> for name in right_assignable.keys():
     ...     del right_assignable[name]
 

@@ -38,19 +38,15 @@ setup(name='collective.portletpage',
       install_requires=[
         'setuptools',
         'Products.CMFPlone',
+        'plone.portlets',
+        'plone.app.portlets',
+        'archetypes.configure',
       ],
       extras_require={
         'test': [
-            'Products.PloneTestCase',
-            'plone.app.dexterity',
-            'plone.app.robotframework',
             'plone.app.testing[robot]>=4.2.2',
+            'plone.app.robotframework',
             'plone.testing',
-            'robotsuite',
-            'zope.event',
-        ],
-        'archetypes': [
-            'Products.ATContentTypes',
         ],
        },
       entry_points="""

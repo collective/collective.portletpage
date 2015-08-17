@@ -1,7 +1,6 @@
 import unittest
 import doctest
-
-from Testing import ZopeTestCase as ztc
+from plone.testing import layered
 
 from collective.portletpage.tests import base
 
@@ -12,18 +11,15 @@ def test_suite():
     return unittest.TestSuite([
 
         # Demonstrate the main content types
-        ztc.ZopeDocFileSuite(
+        layered(doctest.DocFileSuite(
             'tests/content.txt', package='collective.portletpage',
-            test_class=base.FunctionalTestCase,
             optionflags=optionflags),
+            layer=base.COLLECTIVE_PORTLETPAGE_FUNCTIONAL_TESTING),
 
         # Demonstrate the portlet assignment
-        ztc.ZopeDocFileSuite(
+        layered(doctest.DocFileSuite(
             'tests/portletassignment.txt', package='collective.portletpage',
-            test_class=base.FunctionalTestCase,
             optionflags=optionflags),
+            layer=base.COLLECTIVE_PORTLETPAGE_FUNCTIONAL_TESTING),
 
         ])
-
-if __name__ == '__main__':
-    unittest.main(defaultTest='test_suite')
