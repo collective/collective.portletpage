@@ -18,6 +18,7 @@ setup(name='collective.portletpage',
         "Framework :: Plone :: 4.1",
         "Framework :: Plone :: 4.2",
         "Framework :: Plone :: 4.3",
+        "Framework :: Plone :: 5.0",
         "Framework :: Zope2",
         "Framework :: Zope3",
         "Programming Language :: Python",
@@ -38,6 +39,20 @@ setup(name='collective.portletpage',
         'setuptools',
         'Products.CMFPlone',
       ],
+      extras_require={
+        'test': [
+            'Products.PloneTestCase',
+            'plone.app.dexterity',
+            'plone.app.robotframework',
+            'plone.app.testing[robot]>=4.2.2',
+            'plone.testing',
+            'robotsuite',
+            'zope.event',
+        ],
+        'archetypes': [
+            'Products.ATContentTypes',
+        ],
+       },
       entry_points="""
       [z3c.autoinclude.plugin]
       target = plone
