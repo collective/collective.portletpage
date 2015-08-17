@@ -16,32 +16,38 @@
 <metal:block define-macro="content-core">
 
   <div tal:define="text context/text|nothing"
-      tal:condition="text" metal:use-macro="python:context.widget('text', mode='view')" />
+       tal:condition="text" metal:use-macro="python:context.widget('text', mode='view')" />
 
   <div id="portletPageColumns"
       tal:define="bothColumns python:view.hasColumnFirst() and view.hasColumnSecond()">
 
-    <div id="portletPageTopRow" class="portletPageColumn"
+    <div class="row">
+    <div id="portletPageTopRow" class="portletPageColumn col-md-12"
         tal:condition="view/hasColumnTop"
         tal:content="structure provider:collective.portletpage.toprow"
         />
+    </div>
 
-    <div id="portletPageFirstColumn" class="portletPageColumn portletPageLeftColumn"
+    <div class="row">
+    <div id="portletPageFirstColumn" class="portletPageColumn portletPageLeftColumn col-md-6"
         tal:condition="view/hasColumnFirst"
         tal:content="structure provider:collective.portletpage.firstcolumn"
-        tal:attributes="class python:bothColumns and 'portletPageColumn portletPageLeftColumn' or 'portletPageColumn'"
+        tal:attributes="class python:bothColumns and 'portletPageColumn portletPageLeftColumn col-md-6' or 'portletPageColumn col-md-12'"
         />
 
-    <div id="portletPageSecondColumn" class="portletPageColumn portletPageRightColumn"
+    <div id="portletPageSecondColumn" class="portletPageColumn portletPageRightColumn col-md-6"
         tal:condition="view/hasColumnSecond"
         tal:content="structure provider:collective.portletpage.secondcolumn"
-        tal:attributes="class python:bothColumns and 'portletPageColumn portletPageRightColumn' or 'portletPageColumn'"
+        tal:attributes="class python:bothColumns and 'portletPageColumn col-md-6' or 'portletPageColumn col-md-12'"
         />
+    </div>
 
-    <div id="portletPageBottomRow" class="portletPageColumn"
+    <div class="row">
+    <div id="portletPageBottomRow" class="portletPageColumn col-md-12"
         tal:condition="view/hasColumnBottom"
         tal:content="structure provider:collective.portletpage.bottomrow"
         />
+    </div>
 
   </div>
 

@@ -4,7 +4,8 @@ Changelog
 1.2.3 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Plone 5 compatibility. Drop compatibility Plone < 4.0
+  [tomgross]
 
 
 1.2.2 (2015-07-08)

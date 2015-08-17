@@ -22,6 +22,7 @@
     <browser:page
         for="..interfaces.IPortletPage"
         name="two-columns"
+        template="two-columns.pt"
         class=".portletpage.TwoColumns"
         permission="zope2.View"
         />
