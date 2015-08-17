@@ -8,11 +8,7 @@ from zope.annotation.interfaces import IAnnotations
 from zope.component import adapts
 from zope.interface import Interface
 
-try:
-    from plone.portlets.interfaces import IPortletAssignmentSettings
-    PLONE4 = True
-except ImportError:
-    PLONE4 = False
+from plone.portlets.interfaces import IPortletAssignmentSettings
 
 
 class PortletPageRetriever(PortletRetriever):
@@ -48,14 +44,13 @@ class PortletPageRetriever(PortletRetriever):
 
         assignments = []
         for assignment in localManager.values():
-            if PLONE4:
-                try:
-                    settings = IPortletAssignmentSettings(assignment)
-                except TypeError:
-                    # Portlet does not exist any longer
-                    continue
-                if not settings.get('visible', True):
-                    continue
+	    try:
+		settings = IPortletAssignmentSettings(assignment)
+	    except TypeError:
+		# Portlet does not exist any longer
+		continue
+	    if not settings.get('visible', True):
+		continue
             assignments.append(assignment)
 
         return [{'category': CONTEXT_CATEGORY,
