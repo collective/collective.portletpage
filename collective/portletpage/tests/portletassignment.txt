@@ -141,6 +141,8 @@ With a portlet defined, the render will now display the calendar *and* the colum
 We can delete this calendar portlet now
 
     >>> browser.open(url+'/@@portlets')
+    >>> browser.contents
+
     >>> browser.getLink('×').click()
 
 Let add a right column portlet
