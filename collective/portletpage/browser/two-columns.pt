@@ -38,7 +38,7 @@
     <div id="portletPageSecondColumn" class="portletPageColumn portletPageRightColumn col-md-6"
         tal:condition="view/hasColumnSecond"
         tal:content="structure provider:collective.portletpage.secondcolumn"
-        tal:attributes="class python:bothColumns and 'portletPageColumn col-md-6' or 'portletPageColumn col-md-12'"
+        tal:attributes="class python:bothColumns and 'portletPageColumn portletPageRightColumn col-md-6' or 'portletPageColumn col-md-12'"
         />
     </div>
 
