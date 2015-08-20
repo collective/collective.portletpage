@@ -24,7 +24,7 @@ dist/
 var/
 .Python
 include/
-lib/
+lib*
 
 
 
