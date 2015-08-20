@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 from Products.Five.browser import BrowserView
-from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 from plone.memoize.instance import memoize
 from zope.component import getMultiAdapter
 
@@ -10,13 +9,12 @@ class Base(BrowserView):
     """
     @memoize
     def plone_view(self):
-        return getMultiAdapter((self.context, self.request), name=u"plone")
+        return getMultiAdapter((self.context, self.request), name=u"plone_layout")
 
 
 class TwoColumns(Base):
     """A two-column layout.
     """
-    __call__ = ViewPageTemplateFile('two-columns.pt')
 
     def hasColumnTop(self):
         ploneview = self.plone_view()
