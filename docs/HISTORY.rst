@@ -4,7 +4,8 @@ Changelog
 1.3.0 (unreleased)
 ------------------
 
-- Plone 5 compatibility. Drop compatibility Plone < 4.0
+- Plone 5 compatibility. Drop compatibility Plone < 4.0.
+  **Note**: it's not compatible with plone.app.mulilingual yet.
   [tomgross]
 
 

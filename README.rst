@@ -59,10 +59,9 @@ Credits
 
 This work was sponsored by:
 
-* `Centrepoint`__ 
+* `Centrepoint`__
 * `Guardia di Finanza`__; Guardia di Finanza support the `PloneGov initiative`__
 
 __ http://centrepoint.org.uk
 __ http://www.gdf.gov.it/
 __ http://www.plonegov.it/
-
