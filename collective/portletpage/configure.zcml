@@ -13,7 +13,7 @@
     <five:registerPackage package="." initialize=".initialize" />
 
     <genericsetup:registerProfile
-        name="base"
+        name="portletpage"
         title="Portlet Page Base Profile"
         directory="profiles/base"
         description="Base profile for Portlet page (do not install directly!)"
@@ -28,7 +28,7 @@
         provides="Products.GenericSetup.interfaces.EXTENSION"
         zcml:condition="not-have plone-5"
         />
-        
+
     <genericsetup:registerProfile
         name="default"
         title="Portlet Page"
